@@ -34,14 +34,44 @@ a {
 background-image: url("../img/cliff.jpg");
 background-repeat: no-repeat;
 }
+.visually-hidden {
+  visibility: hidden;
+}
 .features p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
-  line-height: 26px;
+
   color: #333333;
   background-color: #f2f2f2;
 }
-.visually-hidden {
-  visibility: hidden;
+/*Выпали р*/
+.features-pic {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.accomodation p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+
+  color: #333333;
+  background-color: #f2f2f2;
+}
+.button-search {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: #ffffff;
+  background-color: #766357;
+
 }
