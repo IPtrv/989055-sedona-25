@@ -16,8 +16,8 @@ body {
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
 
@@ -29,6 +29,10 @@ a {
  background-color: #f2f2f2;
  text-align: center;
  text-decoration: none;
+}
+.main-navigation li{
+font: inherit;
+list-style: none;
 }
 .tagline {
 background-image: url("../img/cliff.jpg");
@@ -46,7 +50,6 @@ background-repeat: no-repeat;
   color: #333333;
   background-color: #f2f2f2;
 }
-/*Выпали р*/
 .features-pic {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -56,14 +59,32 @@ background-repeat: no-repeat;
   color: #ffffff;
   background-color: #81b3d2;
 }
+.features-pic p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+}
 .accomodation p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: 400;
 
   color: #333333;
   background-color: #f2f2f2;
+}
+.search-hotels {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: #000000;
+  background-color: #ffffff;
 }
 .button-search {
   font-family: "PT Sans", Arial, sans-serif;
@@ -73,5 +94,71 @@ background-repeat: no-repeat;
 
   color: #ffffff;
   background-color: #766357;
-
 }
+ .search-hotels .calendar {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+
+  color: #000000;
+  background-color: #f2f2f2;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.search-hotels .quantity {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+
+  color: #000000;
+  background-color: #f2f2f2;
+}
+.search-submit {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.page-footer b {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.social-button {
+  background-color: #81b3d2;
+}
+.page-footer li {
+  list-style: none;
+}
+.footer-copyright p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+a:hover {
+color: #81b3d2;
+}
+a:focus {
+color: #81b3d2;
+}
+a:active {
+color: #black-30;
+}
+.button:active {
+  background-color: ;
+}
+/*Состояние кнопок*/
