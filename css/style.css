@@ -30,7 +30,7 @@ a {
  text-align: center;
  text-decoration: none;
 }
-.main-navigation li{
+.site-navigation li{
 font: inherit;
 list-style: none;
 }
@@ -149,16 +149,93 @@ background-repeat: no-repeat;
   line-height: 26px;
   font-weight: 400;
 }
-a:hover {
+.hotels {
+  list-style: none;
+}
+.hotel-name {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+  color:#000000;
+  background-color: #f2f2f2;
+}
+.hotel-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color:#333333;
+  background-color: #f2f2f2;
+}
+.hotel-ref-details {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: left;
+  color:#ffffff;
+  background-color: #81b3d2;
+}
+.hotel-ref-booking {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: left;
+  color:#ffffff;
+  background-color: #766357;
+}
+.stars p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color:#666666;
+  background-color: #f2f2f2;
+}
+.navigation-ref:hover,
+.navigation-ref:focus,
+.hotel-ref:hover,
+.hotel-ref:focus,
+.htmlacademy-ref:hover,
+.htmlacademy-ref:focus {
 color: #81b3d2;
 }
-a:focus {
-color: #81b3d2;
+.navigation-ref:active,
+.hotel-ref:active {
+color: rgba(0, 0, 0, 0.3);
 }
-a:active {
-color: #black-30;
+.hotel-ref-details:hover,
+.hotel-ref-details:focus{
+background-color: #669ec0;
 }
-.button:active {
-  background-color: ;
+.hotel-ref-details:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: #5496bd;
 }
-/*Состояние кнопок*/
+.hotel-ref-booking:hover,
+.hotel-ref-booking:focus,
+.button-search:hover,
+.button-search:focus  {
+color: #ffffff;
+background-color: #604e43;
+}
+.hotel-ref-booking:active,
+.button-search:active {
+color: #503e33;
+background-color: #604e43;
+}
+.search-submit:hover,
+.search-submit:focus,
+.social-button:hover,
+.social-button:focus {
+background-color: #669ec0;
+}
+.search-submit:active,
+.social-button:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: #5496bd;
+}

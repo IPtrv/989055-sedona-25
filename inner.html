@@ -4,36 +4,37 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <header class="header">
-          <div class="navigation">
-              <a href="index.html"> <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта «Седона»"></a>
-              <ul class="site-navigation">
-                  <li><a href="#">Информация</a></li>
-                  <li><a href="#">Фото и видео</a></li>
-                  <li><a href="#">Карта штата</a></li>
-                  <li><a href="#catalog-hotels">Гостиницы</a></li>
-              </ul>
-              <!--Место для форм-->
-          </div>
+      <header class="site-header">
+          <nav class="site-navigation">
+            <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта «Седона»">
+            <ul>
+                <li><a class="navigation-ref" href="#">Информация</a></li>
+                <li><a class="navigation-ref" href="#">Фото и видео</a></li>
+                <li><a class="navigation-ref" href="#map">Карта штата</a></li>
+                <li><a class="navigation-ref" href="inner.html">Гостиницы</a></li>
+            </ul>
+          </nav>
       </header>
       <main>
           <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <section class="catalog" id="catalog-hotels">
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
           <ul class="hotels">
               <li class="hotel">
                 <figure>
                     <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara resort & SPA">
                 </figure>
                <div class="hotel-item">
-                  <div class="hotel-name"><h3>Amara resort & SPA</h3></div>
+                  <div class="hotel-name"><a class="hotel-ref" href="#">Amara resort & SPA</a></div>
                   <div class="hotel-price"><p>Гостиница от 4000 р.</p></div>
                   <div class="hotel-action">
-                      <a href="#">Подробнее</a>
-                      <a href="#">Забронировать</a>
+                      <a class="hotel-ref-details" href="#">Подробнее</a>
+                      <a class="hotel-ref-booking" href="#">Забронировать</a>
                   </div>
               </div>
               <div class="stars">
@@ -41,7 +42,7 @@
                   <img src="img/star.svg" width="18" height="17" alt="star">
                   <img src="img/star.svg" width="18" height="17" alt="star">
                   <img src="img/star.svg" width="18" height="17" alt="star">
-                  <p>Рейтинг:8,5</p>
+                  <p>Рейтинг: 8,5</p>
               </div>
             </li>
             <li class="hotel">
@@ -49,18 +50,18 @@
                    <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert quail inn">
                 </figure>
                 <div class="hotel-item">
-                    <div class="hotel-name"><h3>Desert quail inn</h3></div>
+                    <div class="hotel-name"><a class="hotel-ref" href="#">Desert quail inn</a></div>
                     <div class="hotel-price"><p>Мотель от 3000 р.</p></div>
                     <div class="hotel-action">
-                       <a href="#">Подробнее</a>
-                       <a href="#">Забронировать</a>
+                       <a class="hotel-ref-details" href="#">Подробнее</a>
+                       <a class="hotel-ref-booking" href="#">Забронировать</a>
                    </div>
               </div>
               <div class="stars">
                 <img src="img/star.svg" width="18" height="17" alt="star">
                 <img src="img/star.svg" width="18" height="17" alt="star">
                 <img src="img/star.svg" width="18" height="17" alt="star">
-                <p>Рейтинг:8,9</p>
+                <p>Рейтинг: 8,9</p>
               </div>
               </li>
 
@@ -69,35 +70,36 @@
                 <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at poco diablo">
               </figure>
               <div class="hotel-item">
-                <div class="hotel-name"><h3>Villas at poco diablo</h3></div>
+                <div class="hotel-name"><a class="hotel-ref" href="#">Villas at poco diablo</a></div>
                 <div class="hotel-price"><p>Апартаменты от 2000 р.</p></div>
                 <div class="hotel-action">
-                  <a href="#">Подробнее</a>
-                  <a href="#">Забронировать</a>
+                  <a class="hotel-ref-details" href="#">Подробнее</a>
+                  <a class="hotel-ref-booking" href="#">Забронировать</a>
                 </div>
             </div>
             <div class="stars">
                 <img src="img/star.svg" width="18" height="17" alt="star">
                 <img src="img/star.svg" width="18" height="17" alt="star">
-                <p>Рейтинг:9,2</p>
+                <p>Рейтинг: 9,2</p>
             </div>
         </li>
       </ul>
   </section>
   </main>
-      <footer>
-        <b>#visitsedona</b>
-          <ul>
-            <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>Твиттер</a></li>
-            <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>Фейсбук</a></li>
-            <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>Ютуб</a></li>
-          </ul>
-        <div class="footer-copyright">
-          <p>Website by</p>
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
-          width="115" height="41" alt="HTMLacademy"></a>
-        </div>
-      </footer>
-    </div>
-  </body>
+  <footer class="page-footer">
+    <b>#visitsedona</b>
+      <ul>
+        <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>Твиттер</li>
+        <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a>Фейсбук</li>
+        <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+        </svg></a>Ютуб</li>
+      </ul>
+    <div class="footer-copyright">
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+      width="115" height="41" alt="HTMLacademy"></a>
+       </div>
+     </footer>
+   </div>
+ </body>
 </html>
