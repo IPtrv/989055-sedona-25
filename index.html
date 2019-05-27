@@ -11,22 +11,27 @@
     <div class="container">
       <header class="site-header">
           <nav class="site-navigation">
-            <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта «Седона»">
-              <ul>
+            <div class="header-logo">
+              <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта «Седона»">
+            </div>
+              <ul class="header-navigation">
                   <li><a class="navigation-ref" href="#">Информация</a></li>
                   <li><a class="navigation-ref" href="#">Фото и видео</a></li>
                   <li><a class="navigation-ref" href="#map">Карта штата</a></li>
                   <li><a class="navigation-ref" href="inner.html">Гостиницы</a></li>
               </ul>
           </nav>
+          <section class="tagline">
+            <h2 class="visually-hidden">Слоган</h2>
+            <img src="img/welcome.png" width="459" height="353" alt="Welcome to the gorgeous Sedona">
+            <div class="polygon">
+              <img src="img/polygon.png">
+            </div>
+          </section>
       </header>
       <main>
           <h1 class="visually-hidden">Главная страница сайта "Седона"</h1>
-        <section class="tagline">
-          <h2 class="visually-hidden">Слоган</h2>
-          <img src="img/welcome.png" width="459" height="353" alt="Welcome to the gorgeous Sedona">
-          <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-        </section>
+        <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
             <p>Рассмотрим 5 причин по которым Седона круче чем гранд каньон!</p>
@@ -63,7 +68,7 @@
                       <img src="img/brige.jpg" width="800" height="256" alt="brige">
                   </div>
                   <div class="features-pic-block">
-                     <h3>Там есть мост дьявола</h3>
+                     <h3>Там есть <br>мост дьявола</h3>
                       <p>№2 Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                   </div>
@@ -85,14 +90,14 @@
           <section class="accomodation">
             <h3 class="visually-hidden">Размещение</h3>
             <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-<div class="search-hotels">
+          <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<div class="search-hotels>
 <a class="button-search" href="form.html">Поиск гостиницы в Седоне</a>
 <form class="search" method="get" action="https://echo.htmlacademy.ru" >
         <label>Дата заезда<input class="calendar" type="text" name="date" value="24 апреля 2017"></label>
         <label>Дата выезда<input class="calendar" type="text" name="date" value="4 июля 2017"></label>
-        <label>Взрослые<input class="quantity" type="text" name="number" value="- 2 +"></label>
-        <label>Дети<input class="quantity" type="text" name="number" value="- 0 +"></label>
+        <label>Взрослые<input class="quantity" type="text" name="number" value="2"></label>
+        <label>Дети<input class="quantity" type="text" name="number" value="0"></label>
         <label><input class="search-submit" type="submit" value="Найти"></label>
   </form>
 </div>
@@ -113,7 +118,8 @@
           </ul>
         <div class="footer-copyright">
           <p>Website by</p>
-          <a class="htmlacademy-ref" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+          <a class="htmlacademy-ref" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg"
           width="115" height="41" alt="HTMLacademy"></a>
         </div>
       </footer>
