@@ -16,11 +16,12 @@ body {
   height: 2762px;
 }
 .site-header {
-  display: flex;
   width: 1200px;
   min-height: 557px;
   margin-bottom: 56px;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .site-navigation {
   width: 1200px;
@@ -34,40 +35,39 @@ body {
   background-color: green;
 }
 .header-logo {
+  float: left;
   width: 140px;
-  margin: auto;
+  margin-left: 529px;
 background-color: red;
 }
-/*body > * {
-  background-color: black;
+.header-navigation li {
+  width: 239px;
+  min-height: 56px;
+  font: inherit;
+  list-style: none;
+  background-color: pink;
+
 }
-body > * > * {
-  background-color: yellow;
-}
-body > * > * > * {
-  background-color: red;
-}
-body > * > *  > * > *{
-  background-color: lightgray;
-}*/
 a {
  color: #000000;
  background-color: #f2f2f2;
  text-align: center;
  text-decoration: none;
 }
-.site-navigation li{
-font: inherit;
-list-style: none;
-}
 .tagline {
 background-image: url("../img/cliff.jpg");
 background-repeat: no-repeat;
+
+}
+.tagline-logo {
+  width: 459px;
+  margin: auto;
+  padding-top: 61px;
 }
 .polygon {
-  display: block;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  background-color: red;
 }
 .visually-hidden {
   visibility: hidden;
@@ -146,9 +146,9 @@ background-repeat: no-repeat;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-image: <svg width="220" height="120">
-  <line x1="0" y1="60" x2="20" y2="60" stroke="black" stroke-width="5"/>
-</svg>;
+  background-image: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
+<path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
+</svg>
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -247,9 +247,7 @@ background-repeat: no-repeat;
 .navigation-ref:hover,
 .navigation-ref:focus,
 .hotel-ref:hover,
-.hotel-ref:focus,
-.htmlacademy-ref:hover,
-.htmlacademy-ref:focus {
+.hotel-ref:focus {
 color: #81b3d2;
 }
 .navigation-ref:active,
