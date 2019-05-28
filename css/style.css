@@ -14,39 +14,36 @@ body {
 .container {
   width: 1200px;
   height: 2762px;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+
 }
 .site-header {
   width: 1200px;
   min-height: 557px;
   margin-bottom: 56px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: green;
 }
 .site-navigation {
   width: 1200px;
   min-height: 56px;
-  background-color: yellow;
 }
 .header-navigation {
   width: auto;
   min-height: 56px;
   margin-top: 0;
-  background-color: green;
 }
 .header-logo {
   float: left;
   width: 140px;
   margin-left: 529px;
-background-color: red;
 }
 .header-navigation li {
   width: 239px;
   min-height: 56px;
   font: inherit;
   list-style: none;
-  background-color: pink;
-
 }
 a {
  color: #000000;
@@ -64,6 +61,7 @@ background-repeat: no-repeat;
   margin: auto;
   padding-top: 61px;
 }
+/*Не прижимается к нижнему краю*/
 .polygon {
   padding: 0;
   margin: 0;
@@ -146,11 +144,11 @@ background-repeat: no-repeat;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-image: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
+  /*background-image: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
 <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
 </svg>
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left;*/
 }
 .quantity {
   font-family: "PT Sans", Arial, sans-serif;
