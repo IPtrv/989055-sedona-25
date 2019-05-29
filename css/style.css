@@ -13,37 +13,36 @@ body {
 }
 .container {
   width: 1200px;
-  height: 2762px;
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-
-}
-.site-header {
-  width: 1200px;
-  min-height: 557px;
-  margin-bottom: 56px;
-  background-color: green;
+  margin: 0 auto;
 }
 .site-navigation {
   width: 1200px;
+  position: relative;
   min-height: 56px;
 }
 .header-navigation {
-  width: auto;
+  width: 100%;
   min-height: 56px;
   margin-top: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-logo {
-  float: left;
   width: 140px;
-  margin-left: 529px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -70px;
 }
+
 .header-navigation li {
   width: 239px;
-  min-height: 56px;
   font: inherit;
   list-style: none;
+  text-align: center;
 }
 a {
  color: #000000;
@@ -51,31 +50,47 @@ a {
  text-align: center;
  text-decoration: none;
 }
-.tagline {
+.tagline-page {
+margin: 0;
+padding: 0;
+min-height: 508px;
 background-image: url("../img/cliff.jpg");
+background-size: auto;
 background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
-}
-.tagline-logo {
-  width: 459px;
-  margin: auto;
-  padding-top: 61px;
-}
-/*Не прижимается к нижнему краю*/
-.polygon {
-  padding: 0;
+.tagline-points {
   margin: 0;
-  background-color: red;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .features p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-
   color: #333333;
   background-color: #f2f2f2;
 }
@@ -106,14 +121,19 @@ background-repeat: no-repeat;
   color: #333333;
   background-color: #f2f2f2;
 }
-.search-hotels {
+/*.search-hotels*/
+.search {
+  margin: 0;
+  padding: 0;
+  width: 568px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-
+  background-color: red;
+  display: flex;
   color: #000000;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 .button-search {
   font-family: "PT Sans", Arial, sans-serif;
@@ -124,45 +144,18 @@ background-repeat: no-repeat;
   color: #ffffff;
   background-color: #766357;
 }
- .calendar {
+ .calendar,
+ .quantity {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  color: #000000;
+}
 
-  color: #000000;
+.calendar {
   background-color: #f2f2f2;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-}
-.quantity {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  /*background-image: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
-<path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
-</svg>
-  background-repeat: no-repeat;
-  background-position: left;*/
-}
-.quantity {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  background-image: <svg width="220" height="120">
-  <line x1="0" y1="60" x2="20" y2="60" stroke="black" stroke-width="5"/>
-  <line x1="10" y1="50" x2="10" y2="70" stroke="black" stroke-width="5"/>
-</svg>
-  background-repeat: no-repeat;
-  background-position: right;
 }
 .search-submit {
   font-family: "PT Sans", Arial, sans-serif;
@@ -245,7 +238,9 @@ background-repeat: no-repeat;
 .navigation-ref:hover,
 .navigation-ref:focus,
 .hotel-ref:hover,
-.hotel-ref:focus {
+.hotel-ref:focus,
+.htmlacademy-ref:hover,
+.htmlacademy-ref:focus {
 color: #81b3d2;
 }
 .navigation-ref:active,
