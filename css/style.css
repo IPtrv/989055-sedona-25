@@ -7,19 +7,23 @@ body {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-
   color: #000000;
-  background-color: #f2f2f2;
+  background-color: rgba(0, 1, 1, 0.2);
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #f2f2f2;
+  box-shadow: 0px 5px 15px 0;
 }
+
 .site-navigation {
   width: 1200px;
   position: relative;
   min-height: 56px;
 }
+
 .header-navigation {
   width: 100%;
   min-height: 56px;
@@ -27,23 +31,34 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
+
 .header-logo {
   width: 140px;
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -70px;
+  background-color: transparent;
 }
 
 .header-navigation li {
   width: 239px;
   font: inherit;
   list-style: none;
-  text-align: center;
+  text-align: left;
+  line-height: 56px;
 }
+.header-navigation li:last-child,
+.header-navigation li:nth-child(3){
+  width: 239px;
+  font: inherit;
+  list-style: none;
+  text-align: right;
+  line-height: 56px;
+}
+
 a {
  color: #000000;
  background-color: #f2f2f2;
@@ -86,6 +101,7 @@ align-items: center;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .features p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -94,56 +110,56 @@ align-items: center;
   color: #333333;
   background-color: #f2f2f2;
 }
+
 .features-pic {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-
   color: #ffffff;
   background-color: #81b3d2;
 }
+
 .features-pic p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-
   color: #ffffff;
   background-color: #81b3d2;
 }
+
 .accomodation p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-
   color: #333333;
   background-color: #f2f2f2;
 }
-/*.search-hotels*/
-.search {
-  margin: 0;
-  padding: 0;
+
+.search-hotels {
+  margin: 0 auto;
   width: 568px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  background-color: red;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #000000;
-  /*background-color: #ffffff;*/
 }
+
 .button-search {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
   color: #ffffff;
   background-color: #766357;
 }
+
  .calendar,
  .quantity {
   font-family: "PT Sans", Arial, sans-serif;
@@ -164,10 +180,10 @@ align-items: center;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-
   color: #ffffff;
   background-color: #81b3d2;
 }
+
 .page-footer b {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
@@ -182,15 +198,18 @@ align-items: center;
 .page-footer li {
   list-style: none;
 }
+
 .footer-copyright p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
 }
+
 .hotels {
   list-style: none;
 }
+
 .hotel-name {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
@@ -200,6 +219,7 @@ align-items: center;
   color:#000000;
   background-color: #f2f2f2;
 }
+
 .hotel-price {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -208,6 +228,7 @@ align-items: center;
   color:#333333;
   background-color: #f2f2f2;
 }
+
 .hotel-ref-details {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -217,6 +238,7 @@ align-items: center;
   color:#ffffff;
   background-color: #81b3d2;
 }
+
 .hotel-ref-booking {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -226,6 +248,7 @@ align-items: center;
   color:#ffffff;
   background-color: #766357;
 }
+
 .stars p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -235,6 +258,7 @@ align-items: center;
   color:#666666;
   background-color: #f2f2f2;
 }
+
 .navigation-ref:hover,
 .navigation-ref:focus,
 .hotel-ref:hover,

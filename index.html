@@ -11,9 +11,9 @@
     <div class="container">
       <header>
         <nav class="site-navigation">
-            <div class="header-logo">
-              <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта «Седона»">
-            </div>
+              <a class="header-logo" href="#">
+                <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта «Седона»">
+              </a>
               <ul class="header-navigation">
                 <li><a class="navigation-ref" href="#">Информация</a></li>
                 <li><a class="navigation-ref" href="#">Фото и видео</a></li>
@@ -32,7 +32,7 @@
         </section>
         <div class="tagline-points">
           <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-          <div><p>Рассмотрим 5 причин по которым Седона круче чем гранд каньон!</p></div>
+          <p>Рассмотрим 5 причин по которым Седона круче чем гранд каньон!</p>
         </div>
 
         <section class="features">
@@ -91,13 +91,15 @@
          <h3 class="visually-hidden">Размещение</h3>
          <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="search-hotels>
-
-          <form class="search" method="get" action="https://echo.htmlacademy.ru" >
-            <a class="button-search" href="form.html">Поиск гостиницы в Седоне</a>
+        <div class="search-hotels">
+          <a class="button-search" href="form.html">Поиск гостиницы в Седоне</a>
+          <form class="search" method="get" action="https://echo.htmlacademy.ru">
+          <div>
+          <label>Дата заезда</label>
             <div>
-              <label>Дата заезда<input class="calendar" type="text" name="date" value="24 апреля 2017">
-                <button><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <input class="calendar" type="text" name="date" value="24 апреля 2017">
+                <button>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
             <g id="calendar_1_">
             	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -119,11 +121,13 @@
             </g>
             </svg>
           </button>
-            </label>
-          </div>
-          <div>
-            <label>Дата выезда<input class="calendar" type="text" name="date" value="4 июля 2017">
-              <button>
+        </div>
+        </div>
+        <div>
+            <label>Дата выезда</label>
+                <div>
+          <input class="calendar" type="text" name="date" value="4 июля 2017">
+            <button>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
             <g id="calendar_1_">
@@ -146,36 +150,43 @@
             </g>
             </svg>
           </button>
-        </label>
-          </div>
-          <div>
-            <label>Взрослые<button class="less">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
+        </div>
+      </div>
+        <div class="search-wrapper">
+          <div class="search-wrapper-row">
+          <label>Взрослые</label>
+            <button class="less">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
                 <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
-              </svg></button><input class="quantity" type="text" name="number" value="2">
-            </label>
+              </svg>
+            </button>
+            <input class="quantity" type="text" name="number" value="2">
              <button>
                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
                 <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M11.000,7.000 L7.000,7.000 L7.000,11.000 L4.000,11.000 L4.000,7.000 L-0.000,7.000 L-0.000,4.000 L4.000,4.000 L4.000,-0.000 L7.000,-0.000 L7.000,4.000 L11.000,4.000 L11.000,7.000 Z"></path>
                </svg>
              </button>
            </div>
-        <div>
-         <label>Дети<button class="less"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
+        <div class="search-wrapper-row">
+         <label>Дети</label>
+           <button class="less">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
           <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
-          </svg></button><input class="quantity" type="text" name="number" value="0">
-         </label>
+          </svg>
+        </button>
+        <input class="quantity" type="text" name="number" value="0">
         <button>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
            <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M11.000,7.000 L7.000,7.000 L7.000,11.000 L4.000,11.000 L4.000,7.000 L-0.000,7.000 L-0.000,4.000 L4.000,4.000 L4.000,-0.000 L7.000,-0.000 L7.000,4.000 L11.000,4.000 L11.000,7.000 Z"></path>
           </svg>
         </button>
-        <label><input class="search-submit" type="submit" value="Найти">
-        </label>
-  </form>
+      </div>
+    </div>
+    </form>
+  <label><input class="search-submit" type="submit" value="Найти"></label>
 </div>
 </section>
-          <section class="map">
+  <section class="map">
             <h3 class="visually-hidden">Карта</h3>
             <img src="img/map.jpg" id="map" width="1200" height="593" alt="Карта">
         </section>
