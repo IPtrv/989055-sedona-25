@@ -89,19 +89,21 @@
        </section>
        <section class="accomodation">
          <h3 class="visually-hidden">Размещение</h3>
+          <div class="accomodation-line">
          <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
         <div class="search-hotels">
           <a class="button-search" href="form.html">Поиск гостиницы в Седоне</a>
           <form class="search" method="get" action="https://echo.htmlacademy.ru">
-          <div>
-          <label>Дата заезда</label>
-            <div>
+          <div class="search-hotels-wrapper">
+          <label>Дата заезда:</label>
+            <!--<div>-->
                 <input class="calendar" type="text" name="date" value="24 апреля 2017">
                 <button>
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
-            <g id="calendar_1_">
+            <g>
             	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
             		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
             		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
@@ -121,16 +123,16 @@
             </g>
             </svg>
           </button>
+        <!--</div>-->
         </div>
-        </div>
-        <div>
-            <label>Дата выезда</label>
-                <div>
+        <div class="search-hotels-wrapper">
+            <label>Дата выезда:</label>
+                <!--<div>-->
           <input class="calendar" type="text" name="date" value="4 июля 2017">
             <button>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
-            <g id="calendar_1_">
+            <g>
             	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
             		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
             		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
@@ -150,11 +152,11 @@
             </g>
             </svg>
           </button>
-        </div>
+        <!--</div>-->
       </div>
         <div class="search-wrapper">
           <div class="search-wrapper-row">
-          <label>Взрослые</label>
+          <label>Взрослые:</label>
             <button class="less">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
                 <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
@@ -168,7 +170,7 @@
              </button>
            </div>
         <div class="search-wrapper-row">
-         <label>Дети</label>
+         <label>Дети:</label>
            <button class="less">
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
           <path class="half-row-svgpath" fill="rgba(0, 0, 0, 0.3)" d="M0.000,-0.000 L12.000,-0.000 L12.000,3.000 L0.000,3.000 L0.000,-0.000 Z"></path>
@@ -194,14 +196,14 @@
 
       <footer class="page-footer">
         <b>#visitsedona</b>
-          <ul>
+          <ul class="cocial-wrapper">
             <li><a class="social-button" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
-              </svg></a>Твиттер
+              </svg></a><span class="visually-hidden">Твиттер</span>
             </li>
-            <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a>Фейсбук</li>
+            <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a><span class="visually-hidden"> Фейсбук</span></li>
             <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
-            </svg></a>Ютуб</li>
+            </svg></a><span class="visually-hidden">Ютуб</span></li>
           </ul>
         <div class="footer-copyright">
           <p>Website by</p>
