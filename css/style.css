@@ -15,7 +15,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  box-shadow: 0px 5px 15px 0;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .site-navigation {
@@ -66,6 +66,7 @@ a {
  text-align: center;
  text-decoration: none;
 }
+
 .tagline-page {
 margin: 0;
 padding: 0;
@@ -161,7 +162,7 @@ align-items: center;
   font-weight: 700;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: #000000;
   background-color: #ffffff;
@@ -201,8 +202,23 @@ align-items: center;
 }
 
 .calendar {
-  width: 346px;
+  min-width: 310px;
   background-color: #f2f2f2;
+  text-align: left;
+}
+
+.search-wrapper {
+  margin: auto;
+  width: 458px;
+  display: flex;
+  justify-content: space-between;
+}
+.search-hotels-wrapper {
+  margin: auto;
+  width: 458px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .search-wrapper,
@@ -210,14 +226,9 @@ align-items: center;
 margin-bottom: 30px;
 }
 
-.search-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .search-submit {
-  width: 458px;
   margin-bottom: 30px;
+  width: 458px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 58px;
