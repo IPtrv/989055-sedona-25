@@ -18,6 +18,17 @@ body {
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+a {
+ padding: auto;
+ color: #000000;
+ text-align: center;
+ text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 .site-navigation {
   width: 1200px;
   position: relative;
@@ -32,6 +43,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -44,14 +56,21 @@ body {
   background-color: transparent;
 }
 
+.header-navigation a {
+  display: inline-block;
+  /* width: inherit; */
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .header-navigation li {
   width: 239px;
   font: inherit;
   list-style: none;
-  text-align: left;
   line-height: 56px;
-  background-color: #ffffff;
-}
+  text-align: left;
+ }
+
 .header-navigation li:last-child,
 .header-navigation li:nth-child(3){
   width: 239px;
@@ -61,22 +80,26 @@ body {
   line-height: 56px;
 }
 
-a {
- color: #000000;
- text-align: center;
- text-decoration: none;
-}
-
 .tagline-page {
+position: relative;
 margin: 0;
 padding: 0;
-min-height: 508px;
+width: 1200px;
+min-height: 557px;
 background-image: url("../img/cliff.jpg");
 background-size: auto;
 background-repeat: no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+.tagline-logo {
+  position: absolute;
+  top: 50%;
+  margin-top: -176px;
+  left: 50%;
+  margin-left: -235px;
 }
 
 .tagline-points {
@@ -94,13 +117,20 @@ align-items: center;
   background-color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -133,6 +163,7 @@ align-items: center;
 }
 
 .accomodation {
+  position: relative;
   width: auto;
   background-color: #ffffff;
 }
@@ -148,12 +179,17 @@ align-items: center;
 .accomodation-line {
   width: 434px;
   margin: auto;
+  padding-top: 57px;
+  padding-bottom: 138px;
   text-align: center;
   background-color: #ffffff;
 }
 
 .search-hotels {
-  margin: 0 auto;
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  margin-left: -284px;
   width: 568px;
   min-height: 395px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -164,6 +200,7 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -188,6 +225,9 @@ align-items: center;
 
  .calendar,
  .quantity {
+  width: 38px;
+  height: 38px;
+  padding-left: 13px;
   margin-bottom: 30px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -195,10 +235,16 @@ align-items: center;
   font-weight: 700;
   text-align: center;
   color: #000000;
+  border: none;
 }
 
 .quantity {
   width: 38px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  border: none;
 }
 
 .calendar {
@@ -207,12 +253,43 @@ align-items: center;
   text-align: left;
 }
 
-.search-wrapper {
+.search-hotels-date {
+  position: relative;
+  padding: 0;
+}
+
+.search-hotels-date button {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  border: none;
+  opacity: 0.3;
+}
+
+.adult-children-wrapper {
   margin: auto;
+  padding: 0;
   width: 458px;
   display: flex;
   justify-content: space-between;
 }
+
+.adult-children-row {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adult-children-row button {
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  border: none;
+}
+
 .search-hotels-wrapper {
   margin: auto;
   width: 458px;
@@ -221,7 +298,7 @@ align-items: center;
   align-items: baseline;
 }
 
-.search-wrapper,
+.adult-children-wrapper,
 .search-hotels-wrapper {
 margin-bottom: 30px;
 }
@@ -352,8 +429,8 @@ background-color: #669ec0;
 }
 .search-submit:active,
 .social-button:active {
-color: rgba(255, 255, 255, 0.3);
-background-color: #5496bd;
+ color: rgba(255, 255, 255, 0.3);
+ background-color: #5496bd;
 }
 .calendar:hover,
 .calendar:focus {
@@ -404,6 +481,7 @@ background-color: #5496bd;
 }
 
 .footer-copyright {
+  width: 197px;
   display: flex;
   justify-content: space-between;
   align-items: center;
