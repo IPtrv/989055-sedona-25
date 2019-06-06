@@ -32,19 +32,17 @@ img {
 .site-navigation {
   width: 1200px;
   position: relative;
-  min-height: 56px;
   background-color: #ffffff;
 }
 
 .header-navigation {
   width: 100%;
-  min-height: 56px;
   margin-top: 0;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -54,29 +52,39 @@ img {
   left: 50%;
   margin-left: -70px;
   background-color: transparent;
-}
-
-.header-navigation a {
-  display: inline-block;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  z-index: 1;
 }
 
 .header-navigation li {
   width: 239px;
+  min-height: 56px;
   font: inherit;
   list-style: none;
-  line-height: 56px;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 3px dashed green;
  }
 
+.header-navigation a {
+  display: inline-block;
+  border: 3px solid red;
+}
 .header-navigation li:last-child,
 .header-navigation li:nth-child(3){
   width: 239px;
   font: inherit;
+  justify-content: flex-end;
   list-style: none;
-  text-align: right;
-  line-height: 56px;
+
+}
+
+.header-navigation li:first-child {
+  margin-left: 72px;
+}
+
+.header-navigation li:last-child {
+    margin-right: 72px;
 }
 
 .tagline-page {
@@ -214,6 +222,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotels-wrapper {
+  padding: 0;
   margin: auto;
   width: 458px;
   display: flex;
@@ -271,7 +280,9 @@ input[type="radio"].visually-hidden {
 .search-hotels-date {
   position: relative;
   padding: 0;
+  margin: 0;
   width: 346px;
+  border: 3px solid red;
 }
 
 .search-hotels-date button {
@@ -297,6 +308,11 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
+.adult-children-quantity {
+  display: flex;
+  justify-content: center;
+}
+
 .adult-children-row button {
   margin: 0;
   padding: 0;
@@ -310,8 +326,9 @@ input[type="radio"].visually-hidden {
 .adult-children-row label {
   margin-right: 27px;
 }
+
 .adult-children-row:first-of-type label {
-  margin-right: 57px;
+  margin-right: 51px;
 }
 
 .adult-children-row svg {
@@ -492,13 +509,25 @@ background-color: #669ec0;
 
 .cocial-wrapper li {
   width: 46px;
-  line-height: 46px;
-  text-align: center;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: #81b3d2;
 }
 
 .social-button {
+  width: 46px;
+  height: 46px;
   background-color: #81b3d2;
+  border: 2px solid red;
+}
+
+.cocial-wrapper svg {
+display:inline-block;
+vertical-align: middle;
+
 }
 
 .footer-copyright {
