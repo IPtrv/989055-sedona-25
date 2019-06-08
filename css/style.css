@@ -155,6 +155,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/*.features {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid red;
+}*/
 .features p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -171,15 +176,98 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
+.features-pic-block {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .features-pic p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
   font-weight: 400;
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.features-benefit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.features-item-benefit {
+  width: 286px;
+}
+
+.features-item-benefit:first-child {
+  width: 252px;
+  margin-left: 72px;
+}
+
+.features-item-benefit:last-child {
+  width: 273px;
+  margin-right: 72px;
+}
+
+.features-empty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features-item-empty {
+  text-align: center;
+}
+.features-item-empty:first-child {
+  margin-left: 72px;
+}
+
+.features-item-empty:last-child {
+  margin-right: 72px;
+}
+
+.features-number {
+  position: relative;
+}
+
+.features-number::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -50%;
+
+  width: 7px;
+  height: 2px;
+
+  background: red;
+}
+
+.features-number::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 7px;
+  height: 2px;
+  background-color: red;
 }
 
 .accomodation {
@@ -377,12 +465,6 @@ line-height: 21px;
 font-weight: 400;
 text-transform: uppercase;
 color: #ffffff;
-}
-
-.filter-range {
-  width: 330px;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
 .filter-range-title {
@@ -670,6 +752,7 @@ background-color: #669ec0;
   width: 46px;
   height: 46px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #81b3d2;
