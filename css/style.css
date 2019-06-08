@@ -93,7 +93,7 @@ padding: 0;
 width: 1200px;
 min-height: 557px;
 background-image: url("../img/cliff.jpg");
-background-size: auto;
+background-position: top;
 background-repeat: no-repeat;
 display: flex;
 }
@@ -107,7 +107,7 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border: none;
+  border: none;S
 }
 
 .tagline-logo {
@@ -216,6 +216,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
   flex-wrap: wrap;
   color: #000000;
@@ -225,7 +226,7 @@ input[type="radio"].visually-hidden {
 
 .search-hotels-wrapper {
   padding: 0;
-  margin: auto;
+  margin: 0;
   width: 458px;
   display: flex;
   justify-content: space-between;
@@ -233,7 +234,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-  width: 568px;
+  width: auto;
   text-align: center;
 }
 
@@ -251,7 +252,6 @@ input[type="radio"].visually-hidden {
 
  .calendar,
  .quantity {
-  width: 38px;
   height: 38px;
   padding-left: 13px;
   margin-bottom: 30px;
@@ -265,8 +265,8 @@ input[type="radio"].visually-hidden {
 }
 
 .quantity {
+
   width: 38px;
-  height: 38px;
   padding: 0;
   margin: 0;
   background-color: #f2f2f2;
@@ -274,7 +274,7 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar {
-  min-width: 310px;
+  width: 328px;
   background-color: #f2f2f2;
   text-align: left;
 }
@@ -284,13 +284,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   width: 346px;
-  border: 3px solid red;
 }
 
 .search-hotels-date button {
   position: absolute;
   top: 9px;
-  right: 9px;
+  right: 0;
   border: none;
   opacity: 0.3;
 }
@@ -330,7 +329,7 @@ input[type="radio"].visually-hidden {
 }
 
 .adult-children-row:first-of-type label {
-  margin-right: 51px;
+  margin-right: 41px;
 }
 
 .adult-children-row svg {
@@ -356,6 +355,159 @@ margin-bottom: 30px;
   background-color: #81b3d2;
 }
 
+.filter-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/cliff-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.filter-range {
+width: 330px;
+font-family: "PT Sans", Arial, sans-serif;
+font-size: 16px;
+line-height: 21px;
+font-weight: 400;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 .hotels {
   list-style: none;
   background-color: #ffffff;
@@ -504,6 +656,8 @@ background-color: #669ec0;
   background-color: #ffffff;
 }
 .cocial-wrapper {
+  margin: 0;
+  padding: 0;
   width: 150px;
   display: flex;
   justify-content: space-between;
@@ -515,21 +669,13 @@ background-color: #669ec0;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: #81b3d2;
 }
 
 .social-button {
-  width: 46px;
-  height: 46px;
+  width: 22px;
+  height: 22px;
   background-color: #81b3d2;
-  border: 2px solid red;
-}
-
-.cocial-wrapper svg {
-display:inline-block;
-vertical-align: middle;
-
 }
 
 .footer-copyright {
