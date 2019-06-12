@@ -14,7 +14,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
+  background-color: #ffffff;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -141,7 +142,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #eeeeee;
 }
 
 .features-pic {
@@ -194,10 +195,15 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+
 }
 
 .features-item-benefit {
   width: 285px;
+}
+
+.features-item-benefit p {
+  background-color: #ffffff;
 }
 
 .features-item-benefit:first-child {
@@ -208,15 +214,26 @@ input[type="radio"].visually-hidden {
   width: 275px;
 }
 
-.features-empty {
+.features-empty-wrapper {
   width: 1028px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #eeeeee;
+}
+
+.features-empty-container {
+  width: 100%;
+  background-color: #eeeeee;
 }
 
 .features-item-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   width: 262px;
 }
@@ -229,6 +246,8 @@ width: 248px;
 }
 
 .features-number {
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -241,7 +260,7 @@ width: 248px;
   width: 7px;
   height: 2px;
 
-  background: red;
+  background-color: #ffffff;
 }
 
 .features-number::before {
@@ -251,9 +270,12 @@ width: 248px;
   left: -50%;
   width: 7px;
   height: 2px;
-  background-color: red;
+  background-color: #ffffff;
 }
-
+.features-item-empty .features-number::before,
+.features-item-empty .features-number::after {
+  background-color: #333333;
+}
 .accomodation {
   position: relative;
   min-height: 234px;
@@ -587,6 +609,15 @@ border: 2px solid red;
 
   background: #ffffff;
 }
+
+.result-filter-container {
+  color: inherit;
+  background-color: #ffffff;
+  width: 1052px;
+  margin: auto;
+  border: 3px solid red;
+}
+
 .hotels {
   display: flex;
   flex-direction: column;
