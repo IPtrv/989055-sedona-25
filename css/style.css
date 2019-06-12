@@ -19,10 +19,7 @@ body {
 }
 
 a {
- padding: auto;
- color: #000000;
- text-align: center;
- text-decoration: none;
+  text-decoration: none;
 }
 
 img {
@@ -68,37 +65,6 @@ img {
  text-align: right;
 
 }
-
-/*.header-navigation li {
-  width: 239px;
-  min-height: 56px;
-  font: inherit;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
- }
-
-.header-navigation a {
-  display: inline-block;
-}
-
-.header-navigation li:last-child,
-.header-navigation li:nth-child(3){
-  width: 239px;
-  font: inherit;
-  justify-content: flex-end;
-  list-style: none;
-
-}
-
-.header-navigation li:first-child {
-  margin-left: 72px;
-}
-
-.header-navigation li:last-child {
-    margin-right: 72px;
-}*/
 
 .tagline-page {
 position: relative;
@@ -471,14 +437,18 @@ margin-bottom: 30px;
 .filter-wrapper {
   margin: 0;
   padding: 0;
+  min-height: 217px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-image: url(../img/cliff-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid red;
 
 }
+
 .filter-range {
 width: 330px;
 font-family: "PT Sans", Arial, sans-serif;
@@ -487,14 +457,16 @@ line-height: 21px;
 font-weight: 400;
 text-transform: uppercase;
 color: #ffffff;
+border: 2px solid red;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  text-align: center;
+  border: 2px solid red;
 }
 
 .price-controls {
@@ -616,30 +588,45 @@ color: #ffffff;
   background: #ffffff;
 }
 .hotels {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  align-items: center;
   background-color: #ffffff;
 }
 
 .hotel {
+  width: 1042px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   background-color: #ffffff;
   border-bottom: solid 1px #f2f2f2;
+  margin-bottom: 60px;
 }
 
-.stars {
-  margin-left: auto;
-  margin-right: 73px;
-  padding-right: 0;
-  padding-left: auto;
+.hotel-item {
+  margin-left: 30px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-items figure {
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-name {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
-  text-align: left;
   color:#000000;
   background-color: #ffffff;
 }
@@ -652,32 +639,44 @@ color: #ffffff;
   color:#333333;
   background-color: #ffffff;
 }
+.hotel-price p,
+.hotel-name h2 {
+  margin: 0;
+  padding: 0;
+}
 
+.hotel-action {
+  text-align: center;
+  width: 258px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .hotel-ref-details {
+  margin: 0;
+  padding: 0;
   width: 110px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  text-align: left;
   color:#ffffff;
   background-color: #81b3d2;
 }
 
 .hotel-ref-booking {
+  margin: 0;
+  padding: 0;
   width: 142px;
-  margin-left: 6px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  text-align: left;
   color:#ffffff;
   background-color: #766357;
 }
 
-.stars p {
+.stars p{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -685,8 +684,14 @@ color: #ffffff;
   text-align: center;
   color:#666666;
   background-color: #f2f2f2;
-  align-self: flex-end;
-}
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
 .navigation-ref:hover,
 .navigation-ref:focus,
