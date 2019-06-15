@@ -24,26 +24,64 @@
       </header>
       <main>
         <section class="filter-wrapper">
-          <h2 class="visually-hidden">Фильтр</h2>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div class="filter-range">
-            <div class="filter-range-title">Стоимость в сутки (р):</div>
-              <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-              </div>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+          <div class="filter-container">
+            <h2 class="visually-hidden">Фильтр</h2>
+            <div class="infrastructure-accomodation">
+              <h3>Инфраструктура:</h3>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" checked>Бассейн
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox">Парковка
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox">wi-fi
+                  </label>
+                </li>
+              </ul>
             </div>
-            <div class="range-toggle range-toggle-min"></div>
-            <div class="range-toggle range-toggle-max"></div>
+            <div class="infrastructure-accomodation">
+              <h3>Тип жилья:</h3>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" checked>Гостиница
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" checked>Мотель
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" checked>Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+            </div>
           </div>
-          <button class="btn-transparent" type="submit">Показать</button>
-         </div>
         </section>
         <div class="result-filter-container">
           <p>Найдено: 3</p>
@@ -54,12 +92,12 @@
          <div class="arrow">
            <button type="button" name="button">
              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+              <path d="M5.5 0L0 10h11z"/>
              </svg>
            </button>
            <button type="button" name="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+              <path d="M5.5 10L0 0h11"/>
             </svg>
          </div>
         </div>
