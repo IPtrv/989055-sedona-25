@@ -977,14 +977,14 @@ color: #ffffff;
   text-align: center;
   color:#666666;
   background-color: #f2f2f2;
-  }
+}
 
-  .stars {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 .page-footer {
   min-height: 120px;
@@ -1036,6 +1036,13 @@ color: #ffffff;
   align-items: center;
   background-color: #81b3d2;
 }
+
+.social-button svg {
+  width: auto;
+  height: auto;
+  padding: 12px 12px;
+}
+
 
 .footer-copyright {
   width: 197px;
@@ -1121,6 +1128,10 @@ color: #ffffff;
   background-color: #604e43;
 }
 
+.social-button svg {
+fill: #ffffff;
+}
+
 .search-submit:hover,
 .search-submit:focus,
 .social-button:hover,
@@ -1134,18 +1145,32 @@ color: #ffffff;
  background-color: #5496bd;
 }
 
+.search-hotels-date svg,
+.adult-children-quantity {
+  fill: #cacaca;
+}
+.search-hotels-date svg:hover,
+.adult-children-quantity:hover {
+  fill: #000000;
+}
+
+.search-hotels-date svg:active,
+.adult-children-quantity:active {
+  fill: #81b3d2;
+}
 
 .social-button svg:active {
- fill: rgba(255, 255, 255, 0.3);
+fill: rgba(255, 255, 255, 0.3);
 }
 
-.calendar svg {
-  stroke: red;
+.htmlacademy-ref svg:hover {
+  fill: #81b3d2;
 }
 
-.htmlacademy-ref svg {
-  fill: red;
+.htmlacademy-ref svg:active {
+  fill: #bdbbbc;
 }
+
 .modal-close {
   background-color: red;
 }
