@@ -3,6 +3,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
 
@@ -459,10 +460,10 @@ padding: 0;
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   position: absolute;
   left: 50%;
   margin-left: -284px;
+  z-index: 1;
 
   width: 568px;
   min-height: 395px;
@@ -1052,6 +1053,17 @@ margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+}
+
+.map {
+  border: 3px solid red;
+}
+
+.main-footer {
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.9;
 }
 
 .footer-copyright p {
