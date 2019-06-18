@@ -1,5 +1,5 @@
 *,*::after,*::before {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 body {
@@ -880,6 +880,7 @@ margin-bottom: 30px;
 .result-filter-container p{
   margin-right: 48px;
 }
+
 .result-filter-container label,
 .filter-button {
   margin-right: 33px;
@@ -923,6 +924,7 @@ margin-bottom: 30px;
 
   list-style: none;
   background-color: #ffffff;
+  border: 3px solid red;
 }
 
 .hotel {
@@ -1053,10 +1055,6 @@ margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-}
-
-.map {
-  border: 3px solid red;
 }
 
 .main-footer {
@@ -1241,9 +1239,4 @@ margin-bottom: 30px;
 
 .htmlacademy-ref svg:active {
   fill: #bdbbbc;
-}
-
-.modal-close {
-  position: absolute;
-  background-color: red;
 }
