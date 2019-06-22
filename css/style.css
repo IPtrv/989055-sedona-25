@@ -584,8 +584,10 @@ padding: 0;
   background-color: #f2f2f2;
 }
 
-.adult-children-row svg {
-  vertical-align: middle;
+ .less {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .adult-children-row label {
@@ -617,6 +619,21 @@ margin-bottom: 30px;
 
   background-color: #81b3d2;
 }
+
+.modal-show {
+display: flex;
+animation-name: bounce;
+animation-duration: 0.8s;
+
+}
+.modal-close {
+  display: none;
+}
+
+@keyframes bounce {
+ 0% { transform: translateY(-395px); }
+ 100% { transform: translateY(0); }
+ }
 
 .filter-wrapper {
   margin: 0;
@@ -826,8 +843,9 @@ margin-bottom: 30px;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .range-toggle:hover {

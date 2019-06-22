@@ -91,13 +91,13 @@
           </div>
         </div>
       </section>
-      <section class="accomodation">
+      <div class="accomodation">
         <h2 class="visually-hidden">Размещение</h2>
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button-search" href="form.html">Поиск гостиницы в Седоне</a>
-      </section>
-      <div class="modal-search-wrapper">
+        <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+      </div>
+      <section class="modal-search-wrapper">
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
           <div class="search-hotels-wrapper">
             <label>Дата заезда:</label>
@@ -188,8 +188,8 @@
             </div>
           </div>
         </form>
-      <button class="search-submit" type="submit">Найти</button>
-      </div>
+        <button class="search-submit" type="submit">Найти</button>
+      </section>
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
         <img src="img/map.jpg" id="map" width="1200" height="593" alt="Карта">
@@ -214,5 +214,27 @@
           </div>
       </footer>
     </div>
+    <script>
+      var popup = document.querySelector(".modal-search-wrapper");
+      var close = document.querySelector(".button-search");
+
+      close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-close");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+            popup.classList.add("modal-close");
+       };
+      });
+      close.addEventListener("click", function (evt) {
+        if (popup.classList.contains("modal-close")){
+          evt.preventDefault();
+            popup.classList.add("modal-show");
+        };
+      });
+    </script>
   </body>
 </html>
