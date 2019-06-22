@@ -620,14 +620,15 @@ margin-bottom: 30px;
   background-color: #81b3d2;
 }
 
+.modal-close {
+  display: none;
+}
+
 .modal-show {
 display: flex;
 animation-name: bounce;
 animation-duration: 0.8s;
 
-}
-.modal-close {
-  display: none;
 }
 
 @keyframes bounce {
