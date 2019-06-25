@@ -706,26 +706,28 @@ background-color: transparent;
   justify-content: space-between;
   align-items: flex-start;
 
-  margin: 0;
+  margin-bottom: 23px;
   padding: 0;
+
+  min-height: 116px;
 }
 
 .infrastructure-accomodation li {
   margin: 0;
-  margin-bottom: 23px;
-  padding-left: 37px;
 
+  padding-left: 37px;
 
   list-style: none;
 }
 
 .infrastructure-accomodation label {
   position: relative;
+  padding-left: 10px;
 
- display: block;
+  display: block;
 
- cursor: pointer;
- user-select: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .accomodation-checkbox + label::before {
@@ -859,6 +861,8 @@ background-color: transparent;
   position: absolute;
   top: -9px;
 
+  box-sizing: content-box;
+
   width: 4px;
   height: 4px;
 
@@ -867,7 +871,6 @@ background-color: transparent;
   border-radius: 50%;
   box-shadow: 0 2px px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
-  box-sizing: content-box;
 }
 
 .range-toggle:hover {
@@ -914,20 +917,27 @@ background-color: transparent;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-
-  width: 1052px;
   margin: auto;
+
+  width: 1060px;
+  min-height: 88px;
 
   background-color: #ffffff;
 }
 
-.result-filter-container p{
+.result-filter-container b {
+  padding: 0;
   margin-right: 48px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
 }
 
-.result-filter-container label,
+.result-filter-container p,
 .filter-button {
-  margin-right: 33px;
+  margin-right: 35px;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -939,16 +949,22 @@ background-color: transparent;
   background-color: #ffffff;
 }
 
-.filter-button:first-of-type {
-  margin-left: 40px;
+.filter-button:last-of-type {
+   margin-right: 504px;
 }
 
 .arrow {
   display: flex;
-  margin-left: auto;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  width: 35px;
 }
 
 .arrow button {
+  padding: 0;
+
   background-color: #ffffff;
   border: none;
 }
@@ -957,8 +973,6 @@ background-color: transparent;
   padding: 0;
   margin: 0;
 
-  width: 100%;
-  height:100%;
 }
 
 .hotels {

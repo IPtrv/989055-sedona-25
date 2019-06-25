@@ -28,59 +28,65 @@
             <h2 class="visually-hidden">Фильтр</h2>
             <div class="infrastructure-accomodation">
               <h3>Инфраструктура:</h3>
-              <ul>
-                <li>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <ul>
+                  <li>
                     <input id="bass-checkbox" class="accomodation-checkbox visually-hidden" type="checkbox" checked>
                     <label for="bass-checkbox">Бассейн</label>
-                </li>
-                <li>
+                  </li>
+                  <li>
                     <input id="parking-checkbox" class="accomodation-checkbox visually-hidden" type="checkbox">
-                    <label for="parking-checkbox">Парковка
-                  </label>
-                </li>
-                <li>
+                    <label for="parking-checkbox">Парковка</label>
+                  </li>
+                  <li>
                     <input id="wi-fi-checkbox" class="accomodation-checkbox visually-hidden" type="checkbox">
                     <label for="wi-fi-checkbox">wi-fi</label>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </form>
             </div>
             <div class="infrastructure-accomodation">
               <h3>Тип жилья:</h3>
-              <ul>
-                <li>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <ul>
+                  <li>
                     <input id="hotel-checkbox" class="accomodation-checkbox visually-hidden" type="checkbox" checked>
                     <label for="hotel-checkbox">Гостиница</label>
-                </li>
-                <li>
+                  </li>
+                  <li>
                     <input id="motel-checkbox" class="accomodation-checkbox visually-hidden" type="checkbox" checked>
                     <label for="motel-checkbox">Мотель</label>
-                </li>
-                <li>
+                  </li>
+                  <li>
                     <input id="apart-checkbox" class="accomodation-checkbox visually-hidden" type="checkbox" checked>
                     <label for="apart-checkbox">Апартаменты</label>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </form>
             </div>
             <div class="filter-range">
-              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="filter-range-title">Стоимость в сутки (р):
+              </div>
+              <form action="https://echo.htmlacademy.ru" method="get">
                 <div class="price-controls">
                   <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                   <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
-            <button class="btn-transparent" type="submit">Показать</button>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+              </form>
             </div>
           </div>
         </section>
         <div class="result-filter-container">
-          <p>Найдено: 3</p>
-          <label>Сортировка:</label>
+          <b>Найдено: 3</b>
+          <p>Сортировка:</p>
           <button class="filter-button" type="button" name="button">По цене</button>
           <button class="filter-button" type="button" name="button">По типу</button>
           <button class="filter-button" type="button" name="button">По рейтингу</button>
@@ -191,6 +197,6 @@
             </a>
           </div>
       </footer>
-    </div>    
+    </div>
   </body>
 </html>
