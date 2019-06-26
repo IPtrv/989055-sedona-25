@@ -978,7 +978,12 @@ background-color: transparent;
 .hotels {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 28px 0;
+  margin: 0;
+
+  min-height: 453px;
 
   list-style: none;
   background-color: #ffffff;
@@ -987,31 +992,22 @@ background-color: transparent;
 .hotel {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 0;
+  margin: 0;
 
-  width: 1042px;
+  width: 1052px;
 
   background-color: #ffffff;
   border-bottom: solid 1px #f2f2f2;
 }
 
-.hotel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 30px;
-
-  height: 90px;
-
-}
-
 .hotel-items {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   margin: 0;
   padding: 0;
-
 }
 
 .hotel-items figure {
@@ -1019,7 +1015,22 @@ background-color: transparent;
   padding: 0;
 }
 
+.hotel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 0;
+  margin-left: 30px;
+
+  min-height: 90px;
+}
+
 .hotel-name {
+  margin: 0;
+  padding: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   color:#000000;
@@ -1028,6 +1039,13 @@ background-color: transparent;
 }
 
 .hotel-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  width: 183px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1036,8 +1054,9 @@ background-color: transparent;
 
   background-color: #ffffff;
 }
+
 .hotel-price p,
-.hotel-name h2 {
+.hotel-item h2 {
   margin: 0;
   padding: 0;
 }
@@ -1046,6 +1065,8 @@ background-color: transparent;
   display: flex;
   justify-content: space-between;
   text-align: center;
+  margin: 0;
+  padding: 0;
 
   width: 258px;
 }
@@ -1072,7 +1093,19 @@ background-color: transparent;
   background-color: #766357;
 }
 
-.stars p{
+.stars {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stars p {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-right: 10px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1081,13 +1114,6 @@ background-color: transparent;
   color:#666666;
 
   background-color: #f2f2f2;
-}
-
-.stars {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .main-footer,
