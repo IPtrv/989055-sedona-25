@@ -1157,7 +1157,7 @@ background-color: transparent;
 .cocial-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin-left: 30px;
   padding: 0;
 
   width: 150px;
