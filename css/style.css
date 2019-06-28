@@ -87,18 +87,17 @@ img {
 }
 
 .tagline-page {
-position: relative;
-margin: 0;
-padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0px;
 
-width: 1200px;
-min-height: 557px;
+  width: 1200px;
+  min-height: 508px;
 
-background-image: url("../img/cliff.jpg");
-background-size: auto;
-background-position: top;
-background-repeat: no-repeat;
-display: flex;
+  background-image: url("../img/cliff.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .tagline-page::after {
@@ -134,7 +133,9 @@ display: flex;
 
   margin: 0;
   padding-top: 60px;
-  padding-bottom: 55px;
+  padding-bottom: 35px;
+
+  min-height: 215px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -146,6 +147,9 @@ display: flex;
 }
 
 .tagline-points h3 {
+  margin: 0;
+  padding: 0;
+
   width: 440px;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -219,10 +223,7 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
 }
 
-.features-blue-block p {
-margin: 0;
-padding: 0;
-}
+
 
 .features-blue-block h3 {
   margin: 0;
@@ -247,18 +248,20 @@ padding: 0;
   background-image: url(../img/town.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
 }
 
 .features-pic-block:nth-last-of-type(2) {
   margin: 0;
   padding: 0;
 
-  width: 800px;
+  width: 870px;
   height: 256px;
 
   background-image: url("../img/brige.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .features-blue-block p {
@@ -281,41 +284,44 @@ padding: 0;
   justify-content: space-between;
   align-items: center;
 
-  padding: 60px 0 0;
-  margin: 0 auto 83px;
+  margin: auto;
+  padding: 0;
 
-  width: 1064px;
+  width: 1090px;
+  min-height: 330px;
 
   text-align: center;
 }
 
 .features-item-benefit {
-  width: 285px;
+  margin: 0;
+  padding: 0;
+
+  width: 290px;
+  min-height: 210px;
 }
 
 .features-item-benefit p {
+  margin: 0;
+  padding: 0;
+
   background-color: #ffffff;
 }
 
-.features-item-benefit:first-child {
-  width: 255px;
-}
-
-.features-item-benefit:last-child {
-  width: 275px;
-}
-
 .features-empty-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 
   width: 100%;
-  min-height: 256px;
+  min-height: 255px;
 
   background-color: #eeeeee;
 }
 
-.features-empty-wrapper {
+/* .features-empty-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,10 +329,11 @@ padding: 0;
   padding: 0;
   margin: 0 auto;
 
-  width: 1028px;
+  width: 1050px;
 
   background-color: #eeeeee;
-}
+    border: 3px solid green;
+}*/
 
 .features-item-empty {
   display: flex;
@@ -335,27 +342,35 @@ padding: 0;
   align-items: center;
   flex-wrap: wrap;
 
-  margin: 57px 0 64px 0;
+  margin: 0;
   padding: 0;
 
-  width: 262px;
-  min-height: 142px;
+  width: 265px;
+  min-height: 150px;
 
   text-align: center;
-
 }
 
-.features-item-empty p,
 .features-item-empty h3 {
   margin: 0;
   padding: 0;
+  width: 130px;
 }
+
+.features-item-empty p {
+  margin: 0;
+  padding: 0;
+}
+
 .features-item-empty:first-child {
-  width: 208px;
+  width: 210px;
+  margin-left: 95px;
+  margin-right: 20px;
 }
 
 .features-item-empty:last-child {
   width: 248px;
+  margin-right: 76px;
 }
 
 .features-item-benefit h3,
@@ -425,6 +440,11 @@ padding: 0;
   background-color: #ffffff;
 }
 
+.accomodation-lines {
+  margin-top: 50px;
+  padding: 0;
+}
+
 .accomodation p {
   margin: 0;
   padding: 0;
@@ -438,8 +458,9 @@ padding: 0;
 }
 
 .accomodation b {
-  padding-top: 57px;
-  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -466,13 +487,13 @@ padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   flex-wrap: wrap;
   position: absolute;
   bottom: -395px;
   left: 50%;
   margin-left: -284px;
+  padding: 0;
   z-index: 1;
 
   width: 568px;
@@ -542,7 +563,7 @@ padding: 0;
 }
 
 .calendar-button {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .search-hotels-date {
@@ -567,6 +588,7 @@ background-color: transparent;
 .adult-children-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
   padding: 0;
 
@@ -613,13 +635,17 @@ background-color: transparent;
 }
 
 
-.adult-children-wrapper,
 .search-hotels-wrapper {
   margin-bottom: 30px;
 }
 
+.adult-children-wrapper {
+  margin-bottom: 54px;
+}
+
 .search-submit {
-  margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
 
   width: 458px;
 
@@ -1159,6 +1185,8 @@ background-color: transparent;
   position: absolute;
   z-index: 1;
   opacity: 0.9;
+
+  min-height: 130px;
 }
 
 .footer-copyright p {
