@@ -35,6 +35,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .site-navigation {
   position: relative;
 
@@ -161,8 +162,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -321,20 +322,6 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
-/* .features-empty-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0;
-  margin: 0 auto;
-
-  width: 1050px;
-
-  background-color: #eeeeee;
-    border: 3px solid green;
-}*/
-
 .features-item-empty {
   display: flex;
   flex-direction: column;
@@ -422,8 +409,8 @@ input[type="radio"].visually-hidden {
 .features-item-empty .features-number::before,
 .features-item-empty .features-number::after {
   background-color: #333333;
-
 }
+
 .accomodation {
   position: relative;
   display: flex;
@@ -634,7 +621,6 @@ input[type="radio"].visually-hidden {
   margin-right: 41px;
 }
 
-
 .search-hotels-wrapper {
   margin-bottom: 30px;
 }
@@ -722,7 +708,7 @@ input[type="radio"].visually-hidden {
   width: 160px;
 }
 
-.infrastructure-accomodation:nth-of-type(2){
+.infrastructure-accomodation:nth-of-type(2) {
   margin-right: 235px;
 }
 
@@ -1249,7 +1235,7 @@ input[type="radio"].visually-hidden {
   height: 41px;
 }
 
-.navigation-ref:visited {
+.navigation-ref-hotels {
   color: #766357;
 }
 
@@ -1280,11 +1266,6 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.filter-button:visited {
-  color: #81b3d2;
-  border: none;
-}
-
 .hotel-ref-details:hover,
 .hotel-ref-details:focus {
   background-color: #669ec0;
@@ -1303,7 +1284,6 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
-.arrow svg:visited,
 .arrow svg:active {
   fill: #81b3d2;
 }
@@ -1341,7 +1321,6 @@ input[type="radio"].visually-hidden {
 
 .calendar:hover {
   background-color: #ebebeb;
-
 }
 
 .calendar:focus {
