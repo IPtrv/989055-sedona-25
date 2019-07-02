@@ -24,7 +24,6 @@
       </header>
       <main>
         <section class="filter-wrapper">
-          <div class="filter-container">
             <h2 class="visually-hidden">Фильтр</h2>
             <div class="infrastructure-accomodation">
               <h3>Инфраструктура:</h3>
@@ -82,7 +81,6 @@
                 <button class="btn-transparent" type="submit">Показать</button>
               </form>
             </div>
-          </div>
         </section>
         <div class="result-filter-container">
           <b>Найдено: 3</b>
@@ -90,16 +88,12 @@
           <button class="filter-button" type="button" name="button">По цене</button>
           <button class="filter-button" type="button" name="button">По типу</button>
           <button class="filter-button" type="button" name="button">По рейтингу</button>
-         <div class="arrow">
+         <div class="arrows">
            <button type="button" name="button">
-             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path d="M5.5 0L0 10h11z"/>
-             </svg>
+             <div id="triangle-up">
+             </div>
            </button>
-           <button type="button" name="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path d="M5.5 10L0 0h11"/>
-            </svg>
+           <button id="triangle-down" type="button" name="button">
           </button>
          </div>
         </div>
@@ -113,7 +107,9 @@
                   <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara resort & SPA">
                 </figure>
                 <div class="hotel-item">
-                  <div class="hotel-name"><a class="hotel-ref" href="#"><h2>Amara resort & SPA</h2></a></div>
+                  <div class="hotel-name">
+                    <a class="hotel-ref" href="#"><h2>Amara resort & SPA</h2></a>
+                  </div>
                   <div class="hotel-price">
                     <div><p>Гостиница</p></div>
                     <div><p>от 4000 р.</p></div>
@@ -140,7 +136,8 @@
                   <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert quail inn">
                 </figure>
                 <div class="hotel-item">
-                  <div class="hotel-name"><a class="hotel-ref" href="#"><h2>Desert quail inn</h2></a></div>
+                  <div class="hotel-name"><a class="hotel-ref" href="#"><h2>Desert quail inn</h2></a>
+                  </div>
                   <div class="hotel-price">
                     <div><p>Мотель</p></div>
                     <div><p>от 3000 р.</p></div>
@@ -166,7 +163,8 @@
                   <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at poco diablo">
                 </figure>
                 <div class="hotel-item">
-                  <div class="hotel-name"><a class="hotel-ref" href="#"><h2>Villas at poco diablo</h2></a></div>
+                  <div class="hotel-name"><a class="hotel-ref" href="#"><h2>Villas at poco diablo</h2></a>
+                  </div>
                   <div class="hotel-price">
                     <div><p>Апартаменты</p></div>
                     <div><p>от 2000 р.</p></div>
