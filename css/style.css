@@ -1178,7 +1178,7 @@ img {
   width: 11px;
   height: 10px;
 
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
 }
 
@@ -1585,20 +1585,24 @@ img {
   background-color: #5496bd;
 }
 
-#triangle-up:hover {
+.triangle-up:hover {
 	border-bottom: 11px solid #000000;
 }
 
-#triangle-down:hover {
+.triangle-down:hover {
   border-top: 11px solid #000000;
 }
 
-#triangle-up:active {
+.triangle-up:active {
 	border-bottom: 11px solid #81b3d2;
 }
 
-#triangle-down:active {
+.triangle-down:active {
 	border-top: 11px solid #81b3d2;
+}
+
+.active-item {
+  border-top: 11px solid #81b3d2;
 }
 
 .hotel-ref-booking:hover,
