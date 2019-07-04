@@ -1182,7 +1182,7 @@ img {
   border: none;
 }
 
-#triangle-up {
+.triangle-up {
   margin: 0;
   padding: 0;
 
@@ -1194,7 +1194,7 @@ img {
 	border-bottom: 11px solid #cacaca;
 }
 
-#triangle-down {
+.triangle-down {
 	width: 0;
 	height: 0;
 
@@ -1567,6 +1567,11 @@ img {
 
 .filter-button:active {
   color: #000000;
+  border: none;
+}
+
+.active-filter {
+  color: #81b3d2;
   border: none;
 }
 
